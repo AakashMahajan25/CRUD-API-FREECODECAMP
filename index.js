@@ -5,6 +5,8 @@ require('dotenv').config();
 const Product = require("./models/product.model.js");
 
 const app = express();
+
+// Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
